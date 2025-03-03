@@ -1,0 +1,36 @@
+/* responsive.css */
+
+/* Mobil uyumlu düzenlemeler */
+@media (max-width: 768px) {
+    body.container {
+        font-size: 16px;
+    }
+    
+
+    .container {
+        padding: 10px; /* Paddingi küçült */
+    }
+
+    .navbar {
+        display: flex;
+        flex-direction: column; /* Navbar'ı dikey yap */
+    }
+
+    .column {
+        flex: 1 1 100%; /* Her sütun 100% genişliğe sahip olacak */
+    }
+}
+
+@media (max-width: 480px) {
+    body {
+        font-size: 12px; /* Daha küçük ekranlar için font boyutunu daha da küçült */
+    }
+
+    .container {
+        padding: 5px; /* Paddingi daha da küçült */
+    }
+
+    .navbar {
+        display: block; /* Navbar'ı blok düzene çevir */
+    }
+}
